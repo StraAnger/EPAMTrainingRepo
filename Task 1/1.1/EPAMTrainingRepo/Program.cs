@@ -13,17 +13,20 @@ namespace Task_1_1
             //сообщение об ошибке.Возможность ввода пользователем строки вида «абвгд» или нецелых чисел
             //игнорировать.
 
+            Console.ForegroundColor = ConsoleColor.Green;
+            //Console.BackgroundColor = ConsoleColor.Black;
+
             Console.WriteLine("Enter side a of rectangle: ");
             string inputStringA = Console.ReadLine();
 
             int rectangleSideA;
 
             if (Int32.TryParse(inputStringA, out rectangleSideA))
-                
-            if (rectangleSideA<= 0)
-            {
-                Console.WriteLine("Error input! Zero or negative input! ");
-            }
+
+                if (rectangleSideA <= 0)
+                {
+                    Console.WriteLine("Error input! Zero or negative input! ");
+                }
 
             Console.WriteLine("Enter side b of rectangle: ");
             string inputStringB = Console.ReadLine();
@@ -46,6 +49,8 @@ namespace Task_1_1
             {
                 Console.WriteLine("There was some errors in input, couldn't calculate sqare.");
             }
+
+            Console.ResetColor();
         }
     }
 }
