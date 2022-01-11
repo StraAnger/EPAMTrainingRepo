@@ -4,12 +4,15 @@
 
 namespace Task_1_1
 {
-    public class Tasl_1_1_2
+    public class Task_1_1_2
     {
         public static void Main(string[] args)
         {
             //Написать программу, которая запрашивает с клавиатуры число N и выводит на экран следующее 
             //«изображение», состоящее из N строк:
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            //Console.BackgroundColor = ConsoleColor.Black;
 
             Console.WriteLine("Enter the N number, please: ");
             string inputStringN = Console.ReadLine();
@@ -24,16 +27,17 @@ namespace Task_1_1
                 }
 
 
-            for (int i = 0; i < stringsNumberN; ++i)
+            for (int i = 1; i <= stringsNumberN; ++i)
             {
-                for(int j = 0; j < i; ++j)
+                for (int j = 0; j < i; ++j)
                 {
                     Console.Write("*");
                 }
                 Console.Write("\n");
 
             }
-           
+
+            Console.ResetColor();
         }
     }
 }
