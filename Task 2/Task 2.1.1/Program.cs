@@ -28,8 +28,9 @@ public class Task_2_1_1
 
         CharString String2 = new CharString(Console.ReadLine().ToCharArray());
 
-        String1.StringOutput();
-        String2.StringOutput();
+        Console.WriteLine(String1.StringOutput());
+
+        Console.WriteLine(String2.StringOutput());
 
         Console.WriteLine(String1.IsEqual(String2));
 

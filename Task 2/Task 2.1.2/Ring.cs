@@ -8,11 +8,8 @@ class Ring : RoundShape
     {
         CenterCoordinateX = cx;
         CenterCoordinateY = cy;
-        if (radius > InnerCircleRadius)
-        {
-            this.Radius = radius;
-            this.InnerCircleRadius = innerCircleRadius;
-        }
+        Radius = radius;
+        this.InnerCircleRadius = innerCircleRadius;
     }
 
     public double GetArea() => Math.PI * (Math.Pow(Radius, 2) - Math.Pow(InnerCircleRadius, 2));

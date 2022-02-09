@@ -18,21 +18,21 @@ public class CharString
     }
 
 
-    public void StringOutput()
+    public string StringOutput()
     {
-        foreach (char c in StringOfChar)
-            Console.Write(c);
-        Console.WriteLine(Environment.NewLine);
+        string output = new string(StringOfChar);
+
+        return output;
     }
 
     public bool IsEqual(CharString inputString)
     {
 
-        if (this.StringOfChar.Length == inputString.StringOfChar.Length)
+        if (StringOfChar.Length == inputString.StringOfChar.Length)
         {
-            for (int i = 0; i < this.StringOfChar.Length; ++i)
+            for (int i = 0; i < StringOfChar.Length; ++i)
             {
-                if (this.StringOfChar[i] != inputString.StringOfChar[i])
+                if (StringOfChar[i] != inputString.StringOfChar[i])
                     return false;
             }
             return true;
@@ -43,19 +43,18 @@ public class CharString
 
     public int IndexOfChar(char inputCharacter)
     {
-        for (int i = 0; i < this.StringOfChar.Length; ++i)
+        for (int i = 0; i < StringOfChar.Length; ++i)
         {
-            if (this.StringOfChar[i] == inputCharacter)
+            if (StringOfChar[i] == inputCharacter)
                 return i;
         }
-        Console.WriteLine("No such character in string");
         return -1;
     }
 
     public int LengthOfString()
     {
         int counter = 0;
-        for (int i = 0; i < this.StringOfChar.Length; ++i)
+        for (int i = 0; i < StringOfChar.Length; ++i)
         {
             ++counter;
         }
@@ -82,16 +81,15 @@ public class CharString
     public int CountSpaces()
     {
         int counter = 0;
-        for (int i = 0; i < this.StringOfChar.Length; ++i)
+        for (int i = 0; i < StringOfChar.Length; ++i)
         {
-            if (this.StringOfChar[i] == ' ')
+            if (StringOfChar[i] == ' ')
                 ++counter;
         }
         if (counter != 0) return counter;
         else
         {
-            Console.WriteLine("No spaces in string");
-            return -1;
+          return -1;
         }
     }
 }
