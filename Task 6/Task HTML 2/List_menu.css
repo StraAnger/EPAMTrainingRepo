@@ -1,9 +1,9 @@
-html, body {
-    height: 100%;
-}
- .wrap {
+body {
+    border: 3px solid crimson;
     min-height: 100%;
     width: 200;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+    background:green;
+    color:yellow;
 }
