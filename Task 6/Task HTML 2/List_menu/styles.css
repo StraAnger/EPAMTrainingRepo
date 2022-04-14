@@ -1,0 +1,51 @@
+body 
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.header,
+.left,
+.right,
+.footer
+{
+	position: absolute;
+	overflow: auto;
+}
+
+.content
+{
+	top: 50px;
+	bottom: 50px;
+	left: 50px;
+	right: 50px;
+}
+
+
+div#center
+{
+	padding: 10px;
+	border: 10px;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background: rgb(255, 224, 58);
+	border: lpx solid rgb(154, 157, 203);
+	border-style:  none inset inset none;
+	border-color: rgb(115, 0, 0);
+	border-radius: 25px;
+
+
+}
+
+ul {
+	list-style-type: none;
+	font-family: Arial;
+	font-size: 20px;
+	color: rgb(200, 0, 0);
+	margin: 10;
+	padding: 0;
+}
