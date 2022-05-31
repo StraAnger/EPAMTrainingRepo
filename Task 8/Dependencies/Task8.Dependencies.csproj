@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Task 8.1.1.BLL\Task8.BLL.csproj" />
+    <ProjectReference Include="..\Task 8.1.1.JsonDAL\Task8.DAL.Json.csproj" />
+    <ProjectReference Include="..\Task8.BLL.Interfaces\Task8.BLL.Interfaces.csproj" />
+    <ProjectReference Include="..\Task8.DAL.Interfaces\Task8.DAL.Interfaces.csproj" />
+    <ProjectReference Include="..\Task8.DAL.SQL\Task8.DAL.SQL.csproj" />
+  </ItemGroup>
+
+</Project>
